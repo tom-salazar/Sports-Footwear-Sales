@@ -26,3 +26,24 @@ The dataset includes 30,000+ rows with the following key columns:
 
 ## Tools
 Microsoft Excel, PostgreSQL Database, Power BI
+
+## Power BI Dashboard
+
+**1. Dashboard Design**
+
+<img width="900" height="510" alt="dashboard-design-footwear" src="https://github.com/user-attachments/assets/6365baa7-6fe7-423d-9c5e-b52087e36990" />
+
+
+
+**2. Units Sold per Year and Total Revenue per Year**
+
+<img width="279" height="507" alt="units-sold-per year + revenue" src="https://github.com/user-attachments/assets/f492a316-34ec-4211-8ddc-948e0d57f94a" />
+
+
+**3. Customers Ratings per Year**
+
+<img width="608" height="380" alt="customers-ratings" src="https://github.com/user-attachments/assets/8e62f684-d791-4a9d-834e-0723ccad1514" />
+
+
+
+
