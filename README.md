@@ -1,2 +1,28 @@
 # Sports-Footwear-Sales
 A global retail dataset for top brand sold, units sold and revenue per year from 2018 to 2026.
+
+## Overview
+This dataset contains realistic sales, top brand sold and costumers rating for sports footwear from 2018 to 2026. It covers multiple global brands (Nike, Adidas, Puma, Reebok, ASICS, New Balance).
+
+## Dataset Features
+The dataset includes 30,000+ rows with the following key columns:
+ - order_id – Unique ID for each sale 🆔
+ - order_date – Sale date 📅
+ - brand – Brand of the shoe 👟
+ - model_name – Specific model of the shoe 🏷️
+ - category – Running, Training, Basketball, Lifestyle, Gym 🏃‍♂️
+ - gender – Men, Women, Unisex 🚹🚺
+ - size – Shoe size 👞
+ - color – Color of the shoe 🎨
+ - base_price_usd – Original price 💵
+ - discount_percent – Discount applied (%) 🔖
+ - final_price_usd – Price after discount 💰
+ - units_sold – Quantity sold 📦
+ - revenue_usd – Total revenue for the order 📊
+ - payment_method – Card, Cash, Wallet, Bank Transfer 💳
+ - sales_channel – Online / Retail Store 🌐🏬
+ - country – Country of sale 🌎
+ - customer_rating – Average rating from 3.0 to 5.0 ⭐
+
+## Tools
+Microsoft Excel, PostgreSQL Database, Power BI
