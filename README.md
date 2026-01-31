@@ -44,6 +44,11 @@ Microsoft Excel, PostgreSQL Database, Power BI
 
 <img width="608" height="380" alt="customers-ratings" src="https://github.com/user-attachments/assets/8e62f684-d791-4a9d-834e-0723ccad1514" />
 
+**4. Top Brand Sold per Year**
+
+<img width="602" height="123" alt="top-brand-sold" src="https://github.com/user-attachments/assets/bbbc7a87-2531-4130-ad72-82480da15f2f" />
+
+
 
 
 
