@@ -50,7 +50,7 @@ Microsoft Excel, PostgreSQL Database, Power BI
 
 
 ## Key Insights
- - Top Brand Sold each Year from 2018 to 2026 is Rebook.
- - Year 2020 has the highest Total Revenue by 1, 032, 345.75 with 8494 Units Sold.
+ - Top Brand Sold each Year from 2018 to 2026 is Reebok.
+ - Year 2020 has the highest Total Revenue of 1, 032, 345.75 with 8494 Units Sold.
 
 
