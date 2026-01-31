@@ -53,4 +53,5 @@ Microsoft Excel, PostgreSQL Database, Power BI
  - Top Brand Sold each Year from 2018 to 2026 is Reebok.
  - Year 2020 has the highest Total Revenue of 1, 032, 345.75 with 8494 Units Sold.
 
-
+### Credits:
+The Dataset is downloaded from Kaggle website. (https://www.kaggle.com/datasets/aliiihussain/sports-footwear-sales-and-consumer-behavior) Author: Ali Hussain
