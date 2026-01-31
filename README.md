@@ -49,6 +49,8 @@ Microsoft Excel, PostgreSQL Database, Power BI
 <img width="602" height="123" alt="top-brand-sold" src="https://github.com/user-attachments/assets/bbbc7a87-2531-4130-ad72-82480da15f2f" />
 
 
-
+## Key Insights
+ - Top Brand Sold each Year from 2018 to 2026 is Rebook.
+ - Year 2020 has the highest Total Revenue by 1, 032, 345.75 with 8494 Units Sold.
 
 
