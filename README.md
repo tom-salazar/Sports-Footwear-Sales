@@ -25,7 +25,7 @@ The dataset includes 30,000+ rows with the following key columns:
  - customer_rating – Average rating from 3.0 to 5.0 ⭐
 
 ## Tools
-Microsoft Excel, PostgreSQL Database, Power BI
+Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 
 ## Power BI Dashboard
 
