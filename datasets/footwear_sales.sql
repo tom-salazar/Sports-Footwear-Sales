@@ -24,95 +24,70 @@
 
 WITH TotalRevenuePerYear AS
 (
-	SELECT 
-	* 
-	FROM
-		(SELECT
-			YEAR(OrderDate) AS years,
-			SUM(RevenueUSD) AS revenue_usd
-		FROM footwear_sales
-		GROUP BY YEAR(OrderDate))rev_year
-		ORDER BY years
+	SELECT
+		YEAR(OrderDate) AS order_years,
+		SUM(RevenueUSD) AS revenue_usd
+	FROM footwear_sales
+	GROUP BY YEAR(OrderDate)
+
 ), -- Total Revenuew per year from 2018 to 2026
 
 SoldByCategory AS
 (
 	SELECT
-	*
-	FROM
-		(SELECT
-			Category,
-			YEAR(OrderDate) AS years,
-			SUM(UnitSold) AS sold_by_category_per_year
-		FROM footwear_sales
-		GROUP BY Category, YEAR(OrderDate))c_sold
-		ORDER BY years
+		Category,
+		YEAR(OrderDate) AS order_years,
+		SUM(UnitSold) AS sold_by_category_per_year
+	FROM footwear_sales
+	GROUP BY Category, YEAR(OrderDate)
+
 ), -- units sold by category per year
 
 SoldByModel AS
 (
 	SELECT
-	* 
-	FROM
-		(SELECT
-			ModelName,
-			SUM(UnitSold) AS sold_by_model
-		FROM footwear_sales
-		GROUP BY ModelName)md_sold
-		ORDER BY sold_by_model DESC
+		ModelName,
+		SUM(UnitSold) AS sold_by_model
+	FROM footwear_sales
+	GROUP BY ModelName
 ), -- sold by models
 
 SoldByBrand AS
 (
 	SELECT
-	* 
-	FROM
-		(SELECT
-			Brand, 
-			SUM(UnitSold) AS units_sold
-		FROM footwear_sales 
-		GROUP BY Brand)b_sold
+		Brand, 
+		SUM(UnitSold) AS units_sold
+	FROM footwear_sales 
+	GROUP BY Brand
 ), -- sold by brands
 
 SoldByGenderPerYear AS
 (
 	SELECT
-	*
-	FROM
-		(SELECT
-			Gender,
-			YEAR(OrderDate) AS years,
-			SUM(UnitSold) AS units_sold_by_gender
-		FROM footwear_sales
-		GROUP BY Gender, YEAR(OrderDate))gen_sold
-		ORDER BY years
+		Gender,
+		YEAR(OrderDate) AS order_years,
+		SUM(UnitSold) AS units_sold_by_gender
+	FROM footwear_sales
+	GROUP BY Gender, YEAR(OrderDate)
 ), -- sold by gender per year
 
 CustomerRatingsPerYear AS
 (
 	SELECT
-	*
-	FROM 
-		(SELECT
-			YEAR(OrderDate) AS years,
-			SUM(CustomerRating) AS customers_ratings
-		FROM footwear_sales
-		GROUP BY YEAR(OrderDate))c_ratings
-		ORDER BY years
+		YEAR(OrderDate) AS order_years,
+		SUM(CustomerRating) AS customers_ratings
+	FROM footwear_sales
+	GROUP BY YEAR(OrderDate)
 ), -- customers ratings per year
 
 CustomerRatingsByCountry AS
 (
 	SELECT
-	*
-	FROM
-		(SELECT
-			Country,
-			YEAR(OrderDate) years,
-			SUM(CustomerRating) AS customers_ratings
-		FROM footwear_sales
-		GROUP BY Country, YEAR(OrderDate))cc_ratings
-		ORDER BY years
+		Country,
+		YEAR(OrderDate) AS order_years,
+		SUM(CustomerRating) AS customers_ratings
+	FROM footwear_sales
+	GROUP BY Country, YEAR(OrderDate)
 ), -- customers ratings by Country per year
 
 TotalUnitsSold AS
@@ -161,6 +136,5 @@ Colors AS
 	FROM footwear_sales
 	GROUP BY Color
 ) -- shoes colors: Grey, Red, Black, Blue, White
-
 
 SELECT * FROM footwear_sales;
